@@ -19,4 +19,5 @@ write C# or cs file to imply variable ways communication between different proce
 |类型|管道|消息队列|
 |----|----|----|
 |生存范围|随进程结束即结束（进程退出）|随内核结束即结束（操作系统退出）|
+
 在window操作系统上，提供了MSMQ（Microsoft Message Queuing）的消息队列服务，而不是.NET生态提供的组件
