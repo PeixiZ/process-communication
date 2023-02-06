@@ -1,6 +1,6 @@
 # process-communication
 write C# or cs file to imply variable ways communication between different processes.
-本项目根据unix第二卷进程间通讯写成
+本项目根据unix第二卷进程间通讯写成，若有更正或更新，请提PR，感谢分享贡献。
 
 
 ## Pipes(管道)
@@ -39,3 +39,16 @@ write C# or cs file to imply variable ways communication between different proce
 |文件实例|[tempstream](./Share/tempStreamA.cs)|[fileaccess](./Share/fileAccessCreate.cs)|
 
 此处使用可参考MSDN的视图原理。[MSDN](https://learn.microsoft.com/zh-cn/dotnet/standard/io/memory-mapped-files)
+
+
+## RPC远程调用
+跨进程的调用函数，跟同一个进程内调用函数有显著的区别。跨进程的调用，需要考虑跨进程的握手，彼此进程在调用前后是否存活等问题。
+C#里面的RPC框架及技术汇总如下（后续有不断更新）
+
+|名称|现状|文件实例|
+|----|----|----|
+|WebService|常见在工控行业内部中||
+|WCF|老旧技术，由于json及REST api效率更高而知名度更少||
+|WebApi|前后端分离项目，常见||
+|gRPC|团队内部使用自定义协议，效率更高，在跨团队合作或者调用时更常用webapi|[gRPC Project](./RPC/gRPC/gRPCServer/)|
+

@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/Stu.cs \
+obj\Debug\net7.0\Protos/StuGrpc.cs: Protos/stu.proto
